@@ -9,7 +9,7 @@ function Main() {
     }
     
       return (
-        <div className="bg-[#171717] text-[#fff] lg:px-20 xl:px-40 2xl:px-64" id="home">
+        <div className="bg-[#171717] pb-16 text-[#fff] lg:px-20 xl:px-40 2xl:px-64" id="home">
            <nav className="flex items-center justify-between pt-3 mx-3 mb-5">
           <h2 className="text-xl font-semibold">Paschal Elechi</h2>
     
@@ -19,7 +19,6 @@ function Main() {
             <li><a href="#skills">Skills</a></li>
             <li>Service</li>
             <li>contact</li>
-            <li>Achievements</li>
           </ul>
     
           <input hidden="" className="hidden check-icon" id="check-icon" name="check-icon" type="checkbox" />
@@ -30,17 +29,17 @@ function Main() {
                 </label>
         </nav>
     
-    {Open && (
-      <div id="Menu" className=" bg-[#27AE60] mt-5 px-4">
-          <ul className="flex flex-col gap-4 py-3 font-semibold">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li>Service</li>
-            <li>contact</li>
-          </ul>
-        </div>
-    )}
+    {Open ? 
+     <div id="Menu" className={`bg-[#27AE60] mt-5 px-4 transition-all duration-1000 ease-in-out overflow-hidden ${open ? 'max-h-64' : 'max-h-0'}`}>
+     <ul className="flex flex-col gap-4 py-3 font-semibold">
+       <li className="border-b-2 border-b-[#212121] pb-3"><a href="#home">Home</a></li>
+       <li className="border-b-2 border-b-[#212121] pb-3"><a href="#about">About</a></li>
+       <li className="border-b-2 border-b-[#212121] pb-3"><a href="#skills">Skills</a></li>
+       <li className="border-b-2 border-b-[#212121] pb-3">Service</li>
+       <li>Contact</li>
+     </ul>
+   </div>
+       : ''}  
         
     
         <div className="flex flex-col gap-3 px-3 md:flex-row md:justify-between md:px-7 md:items-center">
@@ -52,14 +51,14 @@ function Main() {
     
             <div className="flex gap-4 mt-6">
               <button className="bg-[#27AE60] text-sm px-3 py-2">Download cv</button>
-              <Link to='/more'><button className="px-3 py-1 text-sm border-2 border-white">Learm More</button></Link>
+              <Link to='/more'><button className="px-3 py-1 text-sm border-2 border-white">Projects</button></Link>
             </div>
           </div>
     
           <img src="Group 1.svg" alt="" className="md:w-80" />
         </div>
     
-        <div className="text-center md:mx-24" id="about">
+        <div className="px-4 text-center md:mx-24" id="about">
           <h3 className="text-2xl font-bold">About</h3>
           <p className="mt-4 text-sm">Am Paschal and am from Nigeria. Am a full stack Developer 
             and am here to create the front-end, backend or full stack for you 
@@ -68,7 +67,7 @@ function Main() {
           </p>
         </div>
     
-        <div className="flex justify-between mt-9 md:mx-28">
+        <div className="flex justify-between px-4 mt-9 md:mx-28">
           <div className="text-center ">
             <div className="w-10 h-10 rounded-full bg-[#212121] flex justify-center mx-auto">
               <div className="w-2 h-2 rounded-full bg-[#27AE60] my-auto"></div>

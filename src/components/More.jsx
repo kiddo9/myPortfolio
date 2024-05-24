@@ -8,25 +8,25 @@ function More() {
         {
             id: 1,
             name: 'Luxary Hotel',
-            img: 'Vite + React - Google Chrome 4_30_2024 3_22_42 AM.png',
+            img: '/luxuray.png',
             link: 'https://hotel-booking-ecru.vercel.app/'
         },
         {
             id: 2,
             name: 'Resturant',
-            img: 'Resturant - Google Chrome 5_3_2024 1_46_36 PM.png',
+            img: '/Resturant.png',
             link: 'https://restaurant-chi-two.vercel.app/'
         },
         {
             id: 3,
             name: 'Marina Havan',
-            img: 'Vite + React - Google Chrome 5_24_2024 5_11_47 AM.png',
+            img: '/hotel.png',
             link: 'https://m-hotel-beryl.vercel.app/'
         },
         {
             id: 4,
             name: 'School project',
-            img: 'public/IUO - Google Chrome 5_24_2024 5_20_09 AM.png',
+            img: '/iuo.png',
             link: 'https://form-project-eight.vercel.app/'
         }
     ]

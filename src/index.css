@@ -99,10 +99,3 @@
 }
 
 /* Add these classes to your global styles or directly use Tailwind CSS utility classes in the component */
-.max-h-0 {
-  max-height: 0;
-}
-
-.max-h-64 {
-  max-height: 16rem; /* Adjust this value based on the content height */
-}

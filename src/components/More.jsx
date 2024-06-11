@@ -7,28 +7,34 @@ function More() {
     const Projects = [
         {
             id: 1,
-            name: 'Luxary Hotel',
+            name: 'Luxary Hotel. Developed with Reactjs and Tailwinds',
             img: '/luxuray.png',
             link: 'https://hotel-booking-ecru.vercel.app/'
         },
         {
             id: 2,
-            name: 'Resturant',
+            name: 'Resturant. Developed with Reactjs and Tailwinds',
             img: '/Resturant.png',
             link: 'https://restaurant-chi-two.vercel.app/'
         },
         {
             id: 3,
-            name: 'Marina Havan',
+            name: 'Marina Havan. Developed with Reactjs and Tailwinds',
             img: '/hotel.png',
             link: 'https://m-hotel-beryl.vercel.app/'
         },
         {
             id: 4,
-            name: 'School project',
+            name: 'School project. Developed with Reactjs and Tailwinds',
             img: '/iuo.png',
             link: 'https://form-project-eight.vercel.app/'
-        }
+        },
+        {
+          id: 4,
+          name: 'full stack Laravel(PHP) E-commerce project. Developed with Laravel, php, Tailwinds, and javascript',
+          img: '/lara.jpg',
+          link: 'http://paschalecomm2.000.pe'
+      }
     ]
 
 

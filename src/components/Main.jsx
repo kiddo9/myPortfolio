@@ -30,7 +30,7 @@ function Main() {
         </nav>
     
     {Open ? 
-     <div id="Menu" className={`bg-[#27AE60] mt-5 px-4 transition-all duration-1000 ease-in-out overflow-hidden ${open ? 'max-h-64' : 'max-h-0'}`}>
+     <div id="Menu" className={`bg-[#27AE60] h-70 px-4 overflow-hidden  ${Open ? '-translate-x-0' : ''}`}>
      <ul className="flex flex-col gap-4 py-3 font-semibold">
        <li className="border-b-2 border-b-[#212121] pb-3"><a href="#home">Home</a></li>
        <li className="border-b-2 border-b-[#212121] pb-3"><a href="#about">About</a></li>
